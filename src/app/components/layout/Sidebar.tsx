@@ -225,12 +225,7 @@ export default function Sidebar() {
               )}
             </button>
 
-            <button onClick={handleLogout}>
-              <LogOut
-                size={20}
-                className="text-red-400"
-              />
-            </button>
+            
           </div>
         )}
       </div>

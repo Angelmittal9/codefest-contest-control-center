@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import ContestCharts from "../ContestCharts";
 import ContestInfo from "./ContestInfo";
-import AuthGuard from "../AuthGuard";
 import LeaderboardControls from "../leaderboard/LeaderboardControls";
 import ContestTimer from "../ContestTimer";
 import Podium from "../leaderboard/Podium";
