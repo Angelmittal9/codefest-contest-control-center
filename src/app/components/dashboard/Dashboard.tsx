@@ -18,7 +18,7 @@ export default function Dashboard() {
   const [freezeMode, setFreezeMode] = useState(false);
 
   return (
-    <AuthGuard>
+
       <div className="space-y-6">
       {/* HEADER */}
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
@@ -161,6 +161,5 @@ export default function Dashboard() {
                 </div>
       </div>
     </div>
-    </AuthGuard>
   );
 }

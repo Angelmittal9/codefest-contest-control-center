@@ -20,7 +20,6 @@ import {
   Menu,
   ChevronLeft,
   RefreshCw,
-  LogOut,
 } from "lucide-react";
 
 const menuItems = [
@@ -42,10 +41,7 @@ export default function Sidebar() {
 
   const { theme, toggleTheme } = useTheme();
 
-  const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
-    window.location.href = "/login";
-  };
+  
 
   return (
     <aside
@@ -207,28 +203,7 @@ export default function Sidebar() {
               </button>
             </div>
 
-            {/* LOGOUT */}
-            <button
-              onClick={handleLogout}
-              className="
-                mt-4
-                w-full
-                flex
-                items-center
-                justify-center
-                gap-2
-                bg-red-600
-                hover:bg-red-700
-                py-2.5
-                rounded-xl
-                text-white
-                font-medium
-                transition
-              "
-            >
-              <LogOut size={18} />
-              Logout
-            </button>
+            
           </>
         ) : (
           <div className="flex flex-col items-center gap-4">
